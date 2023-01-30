@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AsyncImageBootcamp: View {
     let url = URL(string: "https://picsum.photos/400")
+    
     var body: some View {
         AsyncImage(url: url) { phase in
             switch phase {
